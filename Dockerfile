@@ -1,4 +1,4 @@
-FROM land007/cpp-opencv:latest
+FROM land007/cpp-opencv:16.04
 
 MAINTAINER Yiqiu Jia <yiqiujia@hotmail.com>
 
