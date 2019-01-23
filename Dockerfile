@@ -2,7 +2,7 @@ FROM land007/cpp-opencv:latest
 
 MAINTAINER Yiqiu Jia <yiqiujia@hotmail.com>
 
-RUN apt-get install -y --no-install-recommends libgflags-dev libboost-all-dev pkg-config
+RUN apt-get install -y --no-install-recommends libgflags-dev libboost-all-dev pkg-config libcurl4-openssl-dev
 
 #Ubuntu 16.04.5 LTS
 #RUN cd /tmp && wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/google-glog/glog-0.3.3.tar.gz && tar -zxvf glog-0.3.3.tar.gz && rm -r /tmp/glog-0.3.3.tar.gz
