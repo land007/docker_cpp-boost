@@ -15,5 +15,7 @@ RUN cd /tmp && wget https://github.com/google/glog/archive/v0.3.5.tar.gz && tar 
 RUN cd /tmp/glog-0.3.5 && ./configure && make && make install && rm -rf /tmp/glog-0.3.5
 #RUN apt-get install -y libgoogle-glog-dev
 
+RUN echo $(date "+%Y-%m-%d_%H:%M:%S") > /.image_time
+RUN echo "land007/cpp-boost " > /.image_name
 
 #docker stop cpp-boost ; docker rm cpp-boost ; docker run -it --privileged --name cpp-boost land007/cpp-boost:latest
