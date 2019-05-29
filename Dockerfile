@@ -17,7 +17,9 @@ RUN cd /tmp/glog-0.3.5 && ./configure && make && make install && rm -rf /tmp/glo
 
 RUN cd /tmp && git clone https://github.com/FFmpeg/FFmpeg.git && cd FFmpeg && ./configure --enable-nonfree --enable-pic --enable-shared --disable-x86asm --disable-doc && make && make install && rm -rf /cpp/FFmpeg
 
+RUN echo $(date "+%Y-%m-%d_%H:%M:%S") >> /.image_times
 RUN echo $(date "+%Y-%m-%d_%H:%M:%S") > /.image_time
+RUN echo "land007/cpp-boost " >> /.image_names
 RUN echo "land007/cpp-boost " > /.image_name
 
 
